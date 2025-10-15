@@ -14,15 +14,11 @@ export default function Home() {
     fetch(`${API}/electronics`)
     .then(res => res.json())            
     .then(data => setEletros(data))
-  }, []);
 
-  useEffect(() => {
     fetch(`${API}/jewelery`)
     .then(res => res.json())
     .then(data => setJoias(data))
-  }, []);
 
-  useEffect(() => {
     fetch(`${API}/men's%20clothing`)
     .then(res => res.json())
     .then(data => setRoupasMasc(data))
